@@ -12,6 +12,8 @@ const Counting = () => {
     threshold: 0.1,
   });
 
+  console.log("Is in view:", inView);
+
   return (
     <div className="mulish">
       <div className="text-center space-y-4">
