@@ -10,8 +10,10 @@ import { useInView } from "react-intersection-observer";
 const Counting = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.1,
   });
+
+  const isClient = typeof window !== "undefined";
   return (
     <div className="mulish">
       <div className="text-center space-y-4">
@@ -33,7 +35,7 @@ const Counting = () => {
         <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)]  px-5 py-4 md:px-10 md:py-8">
           <img className="h-16 w-16 mb-1" src={firstImg} alt="" />
 
-          {inView && (
+          {inView && isClient &&(
             <CountUp start={0} end={199} duration={3}>
               {({ countUpRef }) => (
                 <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
@@ -51,7 +53,7 @@ const Counting = () => {
 
         <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
           <img className="h-16 w-16 mb-1" src={secImg} alt="" />
-          {inView && (
+          {inView && isClient && (
             <CountUp start={0} end={467} duration={5}>
               {({ countUpRef }) => (
                 <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
@@ -69,7 +71,7 @@ const Counting = () => {
 
         <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
           <img className="h-16 w-16 mb-1" src={thirdImg} alt="" />
-          {inView && (
+          {inView && isClient &&(
             <CountUp start={0} end={1900} duration={7}>
               {({ countUpRef }) => (
                 <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
@@ -86,7 +88,7 @@ const Counting = () => {
 
         <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
           <img className="h-16 w-16 mb-1" src={fourthImg} alt="" />
-          {inView && (
+          {inView && isClient &&(
             <CountUp start={0} end={300} duration={4}>
               {({ countUpRef }) => (
                 <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
