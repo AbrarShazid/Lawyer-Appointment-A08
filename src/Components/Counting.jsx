@@ -1,26 +1,27 @@
-import React from "react"; 
+import React from "react";
 import firstImg from "../assets/success-doctor.png";
 import secImg from "../assets/success-review.png";
 import thirdImg from "../assets/success-patients.png";
 import fourthImg from "../assets/success-staffs.png";
 
 import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer"; 
+import { useInView } from "react-intersection-observer";
 
 const Counting = () => {
-
   const data = [
     { img: firstImg, end: 199, label: "Total Lawyer", duration: 3 },
     { img: secImg, end: 467, label: "Total Reviews", duration: 5 },
     { img: thirdImg, end: 1900, label: "Cases Initiated", duration: 7 },
     { img: fourthImg, end: 300, label: "Total Stuffs", duration: 4 },
   ];
- const inViewStates = data.map(() => useInView({
-    triggerOnce: true,
-    threshold: 0.3
-  }));
-  // Store refs and inView status for each item
- 
+
+  // Initialize all inView states
+  const inViewRefs = data.map(() =>
+    useInView({
+      triggerOnce: true,
+      threshold: 0.3,
+    })
+  );
 
   return (
     <div className="mulish">
@@ -37,7 +38,7 @@ const Counting = () => {
       {/* card part */}
       <div className="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {data.map((item, i) => {
-          const { ref, inView } = inViewStates[i];  // Accessing ref and inView for each item
+          const { ref, inView } = inViewRefs[i]; 
 
           return (
             <div
