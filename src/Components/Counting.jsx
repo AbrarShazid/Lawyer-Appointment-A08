@@ -19,7 +19,7 @@ const Counting = () => {
   const inViewRefs = data.map(() =>
     useInView({
       triggerOnce: true,
-      threshold: 0.3,
+      threshold: 0.3, // Try adjusting the threshold if this doesn't work
     })
   );
 
@@ -38,7 +38,8 @@ const Counting = () => {
       {/* card part */}
       <div className="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {data.map((item, i) => {
-          const { ref, inView } = inViewRefs[i]; 
+          const { ref, inView } = inViewRefs[i]; // Use the corresponding ref and inView state
+          console.log(`In view for ${item.label}: ${inView}`); // Log inView to debug
 
           return (
             <div
