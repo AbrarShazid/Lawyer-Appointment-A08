@@ -1,25 +1,16 @@
-
-import React, { useEffect, useState } from "react";
+import React from "react";
 import firstImg from "../assets/success-doctor.png";
 import secImg from "../assets/success-review.png";
 import thirdImg from "../assets/success-patients.png";
 import fourthImg from "../assets/success-staffs.png";
-
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const Counting = () => {
-  const [hasMounted, setHasMounted] = useState(false);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
-  if (!hasMounted) return null;
 
   return (
     <div className="mulish">
@@ -33,82 +24,36 @@ const Counting = () => {
         </p>
       </div>
 
-      {/* card part  */}
-
       <div
         ref={ref}
         className="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
       >
-        <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)]  px-5 py-4 md:px-10 md:py-8">
-          <img className="h-16 w-16 mb-1" src={firstImg} alt="" />
-
-          {inView && (
-            <CountUp start={0} end={199} duration={4}>
-              {({ countUpRef }) => (
-                <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
-                  <span ref={countUpRef} />
-                  <p>+</p>
-                </div>
-              )}
-            </CountUp>
-          )}
-
-          <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">
-            Total Lawyer
-          </p>
-        </div>
-
-        <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
-          <img className="h-16 w-16 mb-1" src={secImg} alt="" />
-          {inView &&  (
-            <CountUp start={0} end={467} duration={6}>
-              {({ countUpRef }) => (
-                <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
-                  <span ref={countUpRef} />
-                  <p>+</p>
-                </div>
-              )}
-            </CountUp>
-          )}
-
-          <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">
-            Total Reviews
-          </p>
-        </div>
-
-        <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
-          <img className="h-16 w-16 mb-1" src={thirdImg} alt="" />
-          {inView && (
-            <CountUp start={0} end={1900} duration={7}>
-              {({ countUpRef }) => (
-                <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
-                  <span ref={countUpRef} />
-                  <p>+</p>
-                </div>
-              )}
-            </CountUp>
-          )}
-          <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">
-            Cases Initiated
-          </p>
-        </div>
-
-        <div className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8">
-          <img className="h-16 w-16 mb-1" src={fourthImg} alt="" />
-          {inView && (
-            <CountUp start={0} end={300} duration={5}>
-              {({ countUpRef }) => (
-                <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
-                  <span ref={countUpRef} />
-                  <p>+</p>
-                </div>
-              )}
-            </CountUp>
-          )}
-          <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">
-            Total Stuffs
-          </p>
-        </div>
+        {[
+          { img: firstImg, end: 199, label: "Total Lawyer", duration: 4 },
+          { img: secImg, end: 467, label: "Total Reviews", duration: 6 },
+          { img: thirdImg, end: 1900, label: "Cases Initiated", duration: 7 },
+          { img: fourthImg, end: 300, label: "Total Stuffs", duration: 5 },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8"
+          >
+            <img className="h-16 w-16 mb-1" src={item.img} alt="" />
+            {inView && (
+              <CountUp start={0} end={item.end} duration={item.duration}>
+                {({ countUpRef }) => (
+                  <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
+                    <span ref={countUpRef} />
+                    <p>+</p>
+                  </div>
+                )}
+              </CountUp>
+            )}
+            <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">
+              {item.label}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
