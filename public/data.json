@@ -1,0 +1,124 @@
+{
+  "lawyers": [
+    {
+      "image": "https://i.ibb.co/yBfm2n1t/Female-1.jpg",
+      "name": "Sarah Thompson",
+      "experience": 12,
+      "speciality": "Corporate Law",
+      "fee": 11000,
+      "availability": ["Monday", "Wednesday", "Friday"],
+      "licenseNumber": "LAW-98765432",
+      "description": "Sarah Thompson is a seasoned corporate lawyer with over a decade of experience advising multinational companies and startups alike. She specializes in mergers and acquisitions, compliance, and contract negotiations. Sarah’s attention to detail and deep understanding of business law make her an invaluable asset to clients navigating complex corporate landscapes. Known for her strategic thinking, she helps businesses avoid legal pitfalls while promoting growth. Clients trust her not only for her expertise but also for her clear communication and professional integrity."
+    },
+    {
+      "image": "https://i.ibb.co/j99TQJZg/Male-1.jpg",
+      "name": "James Patel",
+      "experience": 9,
+      "speciality": "Criminal Defense",
+      "fee": 13000,
+      "availability": ["Tuesday", "Thursday"],
+      "licenseNumber": "LAW-87451236",
+      "description": "James Patel is an accomplished criminal defense attorney with extensive courtroom experience. He has successfully defended clients in a range of cases from misdemeanors to high-profile felonies. Known for his fearless advocacy, James is deeply committed to protecting the rights of his clients and ensuring fair treatment under the law. He prepares meticulously, crafts compelling arguments, and negotiates strategically. His empathy and unwavering dedication make him a trusted defender for those in challenging legal situations, earning the respect of peers and clients alike."
+    },
+    {
+      "image": "https://i.ibb.co/TxjHFvr9/Female-3.jpg",
+      "name": "Linda Reyes",
+      "experience": 15,
+      "speciality": "Family Law",
+      "fee": 12200,
+      "availability": ["Monday", "Friday"],
+      "licenseNumber": "LAW-32145678",
+      "description": "Linda Reyes is a compassionate and highly skilled family law attorney with over 15 years of experience handling divorce, child custody, adoption, and domestic disputes. Her calm demeanor and empathetic nature provide comfort to clients during emotionally turbulent times. Linda takes a client-centered approach, ensuring that her clients feel heard, respected, and empowered throughout the legal process. Her deep knowledge of family court procedures and commitment to achieving fair outcomes have made her one of the most sought-after lawyers in her field."
+    },
+    {
+      "image": "https://i.ibb.co/gM7Zbs3F/Male-6.jpg",
+      "name": "David Kim",
+      "experience": 7,
+      "speciality": "Immigration Law",
+      "fee": 11200,
+      "availability": ["Wednesday", "Saturday"],
+      "licenseNumber": "LAW-67895432",
+      "description": "David Kim is a dedicated immigration lawyer known for his commitment to justice and deep understanding of immigration law. He has helped countless individuals and families obtain visas, resolve citizenship issues, and defend against deportation. Fluent in multiple languages, David is especially effective at working with clients from diverse backgrounds. He takes a hands-on approach, walking clients through every legal step and ensuring they feel confident and informed. His work is rooted in compassion, diligence, and a passion for helping people start new lives."
+    },
+    {
+      "image": "https://i.ibb.co/tTcCJTd7/Female-4.jpg",
+      "name": "Nina Shah",
+      "experience": 10,
+      "speciality": "Intellectual Property",
+      "fee": 3350,
+      "availability": ["Tuesday", "Thursday", "Friday"],
+      "licenseNumber": "LAW-78945612",
+      "description": "Nina Shah is a prominent intellectual property lawyer with expertise in trademark, copyright, and patent law. She assists clients in protecting their innovations and branding through sound legal strategies. Nina has worked with artists, tech companies, and entrepreneurs to secure intellectual assets and enforce rights in court. Her analytical skills and creative mindset make her especially effective in this field. Nina's proactive guidance helps clients navigate legal complexities while avoiding infringement issues. Her integrity and precision have earned her a stellar reputation."
+    },
+    {
+      "image": "https://i.ibb.co/Cp78MW3n/Male-5.jpg",
+      "name": "Michael Grant",
+      "experience": 5,
+      "speciality": "Tax Law",
+      "fee": 18000,
+      "availability": ["Monday", "Wednesday"],
+      "licenseNumber": "LAW-85296374",
+      "description": "Michael Grant is an emerging expert in tax law with a track record of helping individuals and small businesses navigate federal and state tax regulations. He provides counsel on audits, tax planning, and dispute resolution. Michael is known for making complex tax codes understandable and for crafting practical solutions that minimize liabilities. He stays updated with the latest changes in tax legislation and applies this knowledge proactively. His approachable nature and analytical precision make him a trusted advisor for anyone facing tax-related issues."
+    },
+    {
+      "image": "https://i.ibb.co/fYJswsMN/Female-2.jpg",
+      "name": "Olivia Brooks",
+      "experience": 8,
+      "speciality": "Environmental Law",
+      "fee": 21000,
+      "availability": ["Tuesday", "Thursday"],
+      "licenseNumber": "LAW-96325874",
+      "description": "Olivia Brooks is a passionate environmental lawyer who advocates for sustainable development and corporate accountability. With eight years of experience, she handles cases involving environmental compliance, pollution, and conservation policy. Olivia partners with NGOs, businesses, and government bodies to enforce environmental laws and guide policy development. Her strong research skills and deep commitment to ecological preservation make her a formidable presence in and out of court. Olivia brings both legal rigor and a genuine concern for the planet to every case she takes on."
+    },
+    {
+      "image": "https://i.ibb.co/Hfz0X987/Male-4.jpg",
+      "name": "Thomas Nguyen",
+      "experience": 13,
+      "speciality": "Real Estate Law",
+      "fee": 27500,
+      "availability": ["Wednesday", "Friday"],
+      "licenseNumber": "LAW-74185296",
+      "description": "Thomas Nguyen is a seasoned real estate lawyer specializing in property transactions, zoning disputes, and lease agreements. With over 13 years of experience, he provides clear and efficient legal support for buyers, sellers, and developers. Thomas is detail-oriented and highly skilled in contract analysis and negotiations. Clients appreciate his transparency and responsiveness. Whether handling commercial developments or residential closings, Thomas ensures compliance and protects clients from costly errors. His expertise in local property laws makes him an essential ally in real estate ventures."
+    },
+    {
+      "image": "https://i.ibb.co/Z6yRcDZy/Female-5.jpg",
+      "name": "Emily Johnson",
+      "experience": 6,
+      "speciality": "Civil Litigation",
+      "fee": 21130,
+      "availability": ["Monday", "Saturday"],
+      "licenseNumber": "LAW-15975348",
+      "description": "Emily Johnson is a diligent civil litigation attorney who has successfully represented clients in a wide range of disputes, from contractual issues to personal injury claims. She is known for her persuasive argumentation, strategic case preparation, and compassionate approach to client advocacy. Emily works closely with her clients to understand their goals and tailor a legal strategy that maximizes success. Her courtroom experience, combined with strong negotiation skills, makes her a formidable advocate. She brings integrity and relentless dedication to every case."
+    },
+    {
+      "image": "https://i.ibb.co/FkHDqYWf/Male-3.jpg",
+      "name": "Brian Lee",
+      "experience": 11,
+      "speciality": "Employment Law",
+      "fee": 26000,
+      "availability": ["Tuesday", "Thursday", "Saturday"],
+      "licenseNumber": "LAW-45612378",
+      "description": "Brian Lee is a respected employment law attorney with extensive experience handling workplace discrimination, wrongful termination, and contract disputes. With over a decade in the field, he provides reliable guidance to both employees and employers. Brian believes in clear communication, fairness, and protecting workplace rights. He combines legal acumen with a practical understanding of HR policies, making him uniquely positioned to resolve complex employment matters efficiently. His commitment to justice and professionalism has earned him a strong reputation among clients and peers."
+    },
+    {
+      "image": "https://i.ibb.co/vxB29hp8/Female-6.jpg",
+      "name": "Priya Desai",
+      "experience": 14,
+      "speciality": "Human Rights Law",
+      "fee": 13000,
+      "availability": ["Wednesday", "Friday"],
+      "licenseNumber": "LAW-11223344",
+      "description": "Priya Desai is a highly regarded human rights lawyer who has spent over a decade advocating for justice, equality, and the protection of civil liberties. She has represented individuals and groups in landmark cases related to freedom of speech, discrimination, and access to education. Priya is known for her tireless commitment to human dignity and her ability to bring systemic issues to light. Her work often intersects with public policy and international law. Clients trust her to champion their rights with integrity and resolve."
+    },
+    {
+      "image": "https://i.ibb.co/nqmxZBPb/Male-2.jpg",
+      "name": "Chris Morgan",
+      "experience": 4,
+      "speciality": "Bankruptcy Law",
+      "fee": 19000,
+      "availability": ["Monday", "Thursday"],
+      "licenseNumber": "LAW-66778899",
+      "description": "Chris Morgan is a bankruptcy lawyer dedicated to helping clients navigate financial distress with dignity and clarity. He advises individuals and businesses on Chapter 7 and Chapter 13 filings, debt reorganization, and creditor negotiations. Chris understands the emotional and financial toll of bankruptcy and strives to offer empathetic, non-judgmental support. His methodical approach ensures that clients understand their rights and options. Though early in his career, Chris’s thoroughness, communication skills, and results-driven mindset have already built him a strong and growing reputation."
+    }
+  ]
+}
