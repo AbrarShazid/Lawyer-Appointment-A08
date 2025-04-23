@@ -6,7 +6,10 @@ import fourthImg from "../assets/success-staffs.png";
 
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer"; 
- const data = [
+
+const Counting = () => {
+
+  const data = [
     { img: firstImg, end: 199, label: "Total Lawyer", duration: 3 },
     { img: secImg, end: 467, label: "Total Reviews", duration: 5 },
     { img: thirdImg, end: 1900, label: "Cases Initiated", duration: 7 },
@@ -16,9 +19,6 @@ import { useInView } from "react-intersection-observer";
     triggerOnce: true,
     threshold: 0.3
   }));
-const Counting = () => {
-
-
   // Store refs and inView status for each item
  
 
