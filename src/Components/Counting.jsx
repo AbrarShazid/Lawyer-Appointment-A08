@@ -19,7 +19,7 @@ const CountingCard = ({ img, end, label, duration }) => {
       className="rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] px-5 py-4 md:px-10 md:py-8"
     >
       <img className="h-16 w-16 mb-1" src={img} alt="" />
-      {inView && (
+      {
         <CountUp start={0} end={end} duration={duration}>
           {({ countUpRef }) => (
             <div className="flex text-[#0F0F0F] text-[40px] font-extrabold items-center">
@@ -28,7 +28,7 @@ const CountingCard = ({ img, end, label, duration }) => {
             </div>
           )}
         </CountUp>
-      )}
+      }
       <p className="text-[rgba(15,15,15,0.60)] text-xl font-medium">{label}</p>
     </div>
   );
