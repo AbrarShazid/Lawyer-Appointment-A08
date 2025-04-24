@@ -8,8 +8,7 @@ const Home = () => {
   const allData = useLoaderData();
 
   return (
-    <div className=" px-[2%] md:px-[5%] space-y-20 mt-3 min-h-[100vh]
-">
+    <div className=" px-[2%] md:px-[5%] space-y-20 mt-3">
       <Banner></Banner>
       <AllLawyers allData={allData}></AllLawyers>
       <Counting></Counting>
