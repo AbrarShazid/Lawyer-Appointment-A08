@@ -2,10 +2,16 @@ import React from "react";
 import errorImg from "../assets/3814348.jpg";
 import Navbar from "../Components/Navbar";
 import { NavLink } from "react-router";
+import { Helmet } from "react-helmet";
 
 const Error = () => {
   return (
     <div>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Law.BD | Error</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <Navbar></Navbar>
 
       <div className="min-h-[calc(100vh-68px)] flex justify-center flex-col items-center">

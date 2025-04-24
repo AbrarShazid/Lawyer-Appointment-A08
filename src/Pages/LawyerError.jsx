@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { NavLink, useParams } from "react-router";
 
 const LawyerError = () => {
@@ -6,6 +7,11 @@ const LawyerError = () => {
 
   return (
     <div className="text-center p-4 md:p-7 lg:p-10  space-y-2.5">
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Law.BD | Lawyer Not Found</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <h1 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold text-red-600">
         Lawyer Not Found
       </h1>

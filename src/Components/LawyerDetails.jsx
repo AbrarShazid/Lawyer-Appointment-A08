@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import icon from "../assets/Frame.png";
 import { addLawyer } from "../Utils";
 import LawyerError from "../Pages/LawyerError";
+import { Helmet } from "react-helmet";
 
 const LawyerDetails = () => {
   let navigate = useNavigate();
@@ -40,6 +41,11 @@ const LawyerDetails = () => {
 
   return (
     <div className="px-[2%] md:px-[5%] mulish mt-3 space-y-7">
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Law.BD | {name}</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <Toaster position="top-right" reverseOrder={false} />
       <div className="p-3 md:p-10 lg:p-16 rounded-2xl bg-[rgba(15,15,15,0.05)] border border-[rgba(15,15,15,0.15)] text-center space-y-4">
         <h1 className="text-[#141414] text-3xl font-extrabold">

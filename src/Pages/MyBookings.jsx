@@ -13,6 +13,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
+import { Helmet } from "react-helmet";
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
@@ -48,6 +49,11 @@ const MyBookings = () => {
 
   return (
     <div className="px-[2%] md:px-[5%] plus-jakarta-sans border-t border-[rgba(15,15,15,0.15)] pt-4">
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Law.BD | Bookings</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <Toaster position="top-right" reverseOrder={false} />
 
       {/* chart  */}
